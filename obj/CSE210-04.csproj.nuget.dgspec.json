@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj": {}
+  },
+  "projects": {
+    "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj",
+        "projectName": "CSE210-04",
+        "projectPath": "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj",
+        "packagesPath": "C:\\Users\\Dylan (User)\\.nuget\\packages\\",
+        "outputPath": "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dylan (User)\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
