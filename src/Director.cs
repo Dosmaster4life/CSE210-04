@@ -6,15 +6,9 @@ public class Director
 {
     public void startGame()
     {
-        Raylib.InitWindow(800, 480, "Hello World");
-        while (!Raylib.WindowShouldClose())
-        {
-            Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.WHITE);
-
-            Raylib.DrawText("Hello, world!", 12, 12, 20, Color.BLACK);
-
-            Raylib.EndDrawing();
-        }
+    VideoService vd = new VideoService();
+    vd.draw();
+    
+       
     }
 }
