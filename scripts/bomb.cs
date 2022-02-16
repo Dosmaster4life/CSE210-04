@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace;
 
-public class bomb
+public class Bomb
 {
     
 }
