@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using DefaultNamespace;
+using System.Collections.Generic;
+
+namespace DefaultNamespace;
+
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Director director = new Director();
+        director.startGame();
+    }
+}
