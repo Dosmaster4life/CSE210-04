@@ -9,8 +9,15 @@ public class Player //This class has all the atributes of the player
  //int speed = 10;
 
  //Below detect if specific keys are being
- bool IsMouseButtonDown(int W);  //Up
- bool IsMouseButtonDown(int s); //Down
- bool IsMouseButtonDown(int a); //left
- bool IsMouseButtonDown(int D);//Right
+
+
+   static void MyMethod() 
+  {
+    // code to be executed
+  }
+  
+ bool IsKeyDown(int W); //Up
+ bool IsKeyDown(int S); //Dowwn
+ bool IsKeyDown(int A); //Left
+ bool IsKeyDown(int D); //Right
 }

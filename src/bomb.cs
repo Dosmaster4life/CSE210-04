@@ -1,6 +1,7 @@
 ﻿namespace DefaultNamespace;
 
-public class Bomb
+public class Bomb : Artifact
+
 {
-    
+
 }
