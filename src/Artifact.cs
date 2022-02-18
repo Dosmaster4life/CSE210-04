@@ -9,7 +9,6 @@ public class Artifact
     private int fallSpeed = 0;
 
     // Set random x coordinate value within frame, set y coordinate value to -10
-    
 
     // Random fall speed 1 - 10
     public void randomFallSpeed() {
