@@ -1,6 +1,6 @@
 namespace DefaultNamespace;
 
-public class Gem
+public class Gem : Artifact
 {
     
 }
