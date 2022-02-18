@@ -4,11 +4,12 @@ public class Artifact
 {
     Random rnd = new Random();
     public int x1 = 0;
-    public int y1 = -100;
+    public int y1 = -10;
     public float radius1 = 10;
     private int fallSpeed = 0;
 
     // Set random x coordinate value within frame, set y coordinate value to -10
+    
 
     // Random fall speed 1 - 10
     public void randomFallSpeed() {
