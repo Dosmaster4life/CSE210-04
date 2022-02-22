@@ -1,5 +1,4 @@
 namespace DefaultNamespace;
-using raylib;
 public class Player //This class has all the atributes of the player
 {
  //string color = "red";
@@ -9,8 +8,5 @@ public class Player //This class has all the atributes of the player
  //int speed = 10;
 
  //Below detect if specific keys are being
- bool IsMouseButtonDown(int W);  //Up
- bool IsMouseButtonDown(int s); //Down
- bool IsMouseButtonDown(int a); //left
- bool IsMouseButtonDown(int D);//Right
+
 }
