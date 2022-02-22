@@ -8,11 +8,14 @@ public class VideoService
     {
        
     }
-    public void draw(List<Artifact>? objectsToDraw)
+    public void draw(List<Artifact> objectsToDraw)
     {
         Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.WHITE);
 
+            for (int i = 0; i < objectsToDraw.Count; i ++) {
+                drawArtifact(objectsToDraw[i].x1, objectsToDraw[i].y1, objectsToDraw[i].radius1);
+            }
 
             Raylib.EndDrawing();
         
