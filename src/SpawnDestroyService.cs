@@ -10,18 +10,21 @@ public class SpawnDestroyService
         switch(artifact) {
             case 'b':
                 Bomb bomb = new();
+                bomb.setArtifactType('b');
                 bomb.setXYCoordinate();
                 bomb.randomFallSpeed();
                 artifactsList.Add(bomb);
                 break;
             case 'g':
                 Gem gem = new();
+                gem.setArtifactType('g');
                 gem.setXYCoordinate();
                 gem.randomFallSpeed();
                 artifactsList.Add(gem);
                 break;
             case 'r':
                 Rock rock = new();
+                rock.setArtifactType('r');
                 rock.setXYCoordinate();
                 rock.randomFallSpeed();
                 artifactsList.Add(rock);

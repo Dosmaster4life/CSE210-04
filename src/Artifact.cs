@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace;
 
-public class Artifact
+public abstract class Artifact
 {
     Random rnd = new Random();
     public int x1 = 0;
@@ -8,10 +8,26 @@ public class Artifact
     public float radius1 = 10;
     private int fallSpeed = 0;
 
+    public char artifactType = 'b';
+
     // Set random x coordinate value within frame, set y coordinate value to -10
     public void setXYCoordinate() {
         x1 = rnd.Next(10, 791);
         y1 = -10;
+    }
+
+    public void setArtifactType(char artifactType) {
+        switch (artifactType) {
+            case 'b':
+                artifactType = 'b';
+                break;
+            case 'g':
+                artifactType = 'g';
+                break;
+            case 'r':
+                artifactType = 'r';
+                break;
+        }
     }
 
     // Random fall speed 1 - 10

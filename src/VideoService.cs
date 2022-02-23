@@ -14,15 +14,23 @@ public class VideoService
             Raylib.ClearBackground(Color.WHITE);
 
             for (int i = 0; i < objectsToDraw.Count; i ++) {
-                drawArtifact(objectsToDraw[i].x1, objectsToDraw[i].y1, objectsToDraw[i].radius1);
+                drawArtifact(objectsToDraw[i].x1, objectsToDraw[i].y1, objectsToDraw[i].radius1, objectsToDraw[i].artifactType);
             }
 
             Raylib.EndDrawing();
         
     }
 
-    public void drawArtifact(int x, int y, float radius) // draws an artifact
+    public void drawArtifact(int x, int y, float radius, char artifactType) // draws an artifact
     {
-        Raylib.DrawCircle(x,y,radius,Color.BLUE);
+        if (artifactType == 'b') {
+            Raylib.DrawCircle(x,y,radius,Color.BLUE);
+        }
+        else if (artifactType == 'g') {
+            Raylib.DrawCircle(x,y,radius,Color.GREEN);
+        }
+        else if (artifactType == 'r') {
+            Raylib.DrawCircle(x,y,radius,Color.RED);
+        }
     }
 }
