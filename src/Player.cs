@@ -7,22 +7,6 @@ public class Player //This class has all the atributes of the player
  //float radius = 5;
  //int speed = 10;
 
- //Below detect if specific keys are being pressed
-
-    static void Left(string[] args)//this method is to detect if the A key is bineg held down by theh player, if so the palyer's icon should move left. 
-    {
-    if (Raylib.IsKeyPressed(KeyboardKey.KEY_A))
-        {
-
-        }
-    }
-
-    static void Right(string[] args)//this method is to detect if the D key is bineg held down by theh player, if so the palyer's icon should move right. 
-    {
-    if (Raylib.IsKeyPressed(KeyboardKey.KEY_D))
-        {
-
-        }
-    }
+ //Below detect if specific keys are being
 
 }
