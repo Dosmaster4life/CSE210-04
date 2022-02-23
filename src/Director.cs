@@ -20,9 +20,8 @@ public class Director
             
             if (spawnDestroyService.checkIfSpawnNeeded()) {
                 spawnDestroyService.spawnArtifact('b');
-                spawnDestroyService.spawnArtifact('g');
                 spawnDestroyService.spawnArtifact('r');
-               
+                spawnDestroyService.spawnArtifact('g');
             }
             
             if (action) {
