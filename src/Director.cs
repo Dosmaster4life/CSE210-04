@@ -22,6 +22,8 @@ public class Director
             
             if (spawnDestroyService.checkIfSpawnNeeded()) {
                 spawnDestroyService.spawnArtifact('b');
+                spawnDestroyService.spawnArtifact('r');
+                spawnDestroyService.spawnArtifact('g');
                
             }
             
