@@ -1,3 +1,5 @@
+using Raylib_cs;
+
 namespace DefaultNamespace;
 public class Player //This class has all the atributes of the player
 {
