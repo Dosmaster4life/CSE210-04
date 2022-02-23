@@ -15,8 +15,16 @@ public class SpawnDestroyService
                 artifactsList.Add(bomb);
                 break;
             case 'g':
+                Gem gem = new();
+                gem.setXYCoordinate();
+                gem.randomFallSpeed();
+                artifactsList.Add(gem);
                 break;
             case 'r':
+                Rock rock = new();
+                rock.setXYCoordinate();
+                rock.randomFallSpeed();
+                artifactsList.Add(rock);
                 break;
         }
     }
