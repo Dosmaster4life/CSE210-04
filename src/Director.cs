@@ -17,14 +17,11 @@ public class Director
 
         while (!Raylib.WindowShouldClose())
         {
-          
-            vd.drawArtifact(50,50,10);
             
             if (spawnDestroyService.checkIfSpawnNeeded()) {
                 spawnDestroyService.spawnArtifact('b');
                 spawnDestroyService.spawnArtifact('r');
                 spawnDestroyService.spawnArtifact('g');
-               
             }
             
             if (action) {
