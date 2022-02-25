@@ -53,4 +53,22 @@ public class SpawnDestroyService
             }
         }
     }
+
+    public void collideCheckAll(Player player) {
+        for(int i = 0; i < artifactsList.Count; i++) {
+            if (artifactsList[i].checkCollision(player.x1, player.y1, player.radius)) {
+                switch(artifactsList[i].artifactName) {
+                    case 'b':
+                        ScoreManager.score = 0;
+                        break;
+                    case 'g':
+                        ScoreManager.scoreUp();
+                        break;
+                    case 'r':
+                        ScoreManager.scoreDown();
+                        break;
+                }
+            }
+        }
+    }
 }

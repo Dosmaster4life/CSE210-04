@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 public class VideoService
 {
+    
+    private int offset = 5;
     public void startGame()
     {
        
@@ -32,16 +34,16 @@ public class VideoService
     {
         if (artifactType == 'b') {
             Raylib.DrawCircle(x,y,radius,Color.BLUE);
-            DrawTexture(Director.bombTexture, x-5, y-5, Color.DARKBLUE);
+            DrawTexture(Director.bombTexture, x-offset, y-offset, Color.DARKBLUE);
             
         }
         else if (artifactType == 'g') {
             Raylib.DrawCircle(x,y,radius,Color.GREEN);
-            DrawTexture(Director.gemTexture, x-5, y-5, Color.DARKGREEN);
+            DrawTexture(Director.gemTexture, x-offset, y-offset, Color.DARKGREEN);
         }
         else if (artifactType == 'r') {
             Raylib.DrawCircle(x,y,radius,Color.RED);
-            DrawTexture(Director.rocketTexture, x-5, y-5, Color.DARKPURPLE);
+            DrawTexture(Director.rocketTexture, x-offset, y-offset, Color.DARKPURPLE);
         }
     }
 }
