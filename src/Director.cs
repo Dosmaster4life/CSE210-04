@@ -15,11 +15,31 @@ public class Director
     static bool action = false;
 
     public static Texture2D bombTexture;
+    public static Texture2D gemTexture;
+    public static Texture2D rockTexture;
+    public static Texture2D rocketTexture;
+
+
 
     public static void setImage() {
+        // Load bomb image
         Image image = LoadImage("bin/Debug/net6.0/images/bomb.png");
         bombTexture = LoadTextureFromImage(image);
+        UnloadImage(image);
 
+        // Load gem image
+        image = LoadImage("bin/Debug/net6.0/images/gem.png");
+        gemTexture = LoadTextureFromImage(image);
+        UnloadImage(image);
+
+        // Load rock image
+        image = LoadImage("bin/Debug/net6.0/images/rock.png");
+        rockTexture = LoadTextureFromImage(image);
+        UnloadImage(image);
+
+        // Load rocket image
+        image = LoadImage("bin/Debug/net6.0/images/rocket.png");
+        rocketTexture = LoadTextureFromImage(image);
         UnloadImage(image);
     }
     public void startGame()
