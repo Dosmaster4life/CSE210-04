@@ -12,22 +12,22 @@ public class Player //This class has all the atributes of the player
     public int x1 = 400;
     public int y1 = 700;
 
- //Below detect if specific keys are being
+ 
 
-    public void Left()//this method is to detect if the A key is bineg held down by theh player, if so the palyer's icon should move left. 
+    public void Left()//this method is to detect if the A key is bineg held down by the player, if so the palyer's icon should move left. 
     {
-        if(x1>5){
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_A))
+        if(x1>5){ //causes player to not go off screen
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT)||Raylib.IsKeyDown(KeyboardKey.KEY_A))
         {
          x1-=5;
         }
     }
     }
 
-    public void Right()//this method is to detect if the D key is bineg held down by theh player, if so the palyer's icon should move right. 
+    public void Right()
     {
     if(x1<795){
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_D))
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT)||Raylib.IsKeyDown(KeyboardKey.KEY_D))
         {
          x1+=5;
         }
@@ -35,12 +35,10 @@ public class Player //This class has all the atributes of the player
 
 
 
-
-
 }
 public void Up() {
    if(y1>5){
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_W))
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_UP)||Raylib.IsKeyDown(KeyboardKey.KEY_W))
         {
          y1-=5;
         }
@@ -52,7 +50,7 @@ public void Up() {
 
 public void Down() {
        if(y1<795){
-    if (Raylib.IsKeyDown(KeyboardKey.KEY_S))
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_DOWN)||Raylib.IsKeyDown(KeyboardKey.KEY_S))
         {
          y1+=5;
         }

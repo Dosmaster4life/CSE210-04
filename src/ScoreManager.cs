@@ -5,7 +5,11 @@ namespace DefaultNamespace;
 public static class ScoreManager
 {
    public static int score = 0;
-    // if player colides with gem score ++
-    // if player colides with rock score --
-    
+   public static void scoreUp(){
+   score = score + 100; 
+   }
+   
+     public static void scoreDown(){
+   score = score - 100; 
+   }
 }
