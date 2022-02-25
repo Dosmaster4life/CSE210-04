@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj": {}
+    "C:\\Users\\kriss\\Documents\\BYUI Documents\\Winter_2022\\Programing_with_classes\\Group6_Projects\\Greed\\CSE210-04\\CSE210-04.csproj": {}
   },
   "projects": {
-    "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj": {
+    "C:\\Users\\kriss\\Documents\\BYUI Documents\\Winter_2022\\Programing_with_classes\\Group6_Projects\\Greed\\CSE210-04\\CSE210-04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj",
+        "projectUniqueName": "C:\\Users\\kriss\\Documents\\BYUI Documents\\Winter_2022\\Programing_with_classes\\Group6_Projects\\Greed\\CSE210-04\\CSE210-04.csproj",
         "projectName": "CSE210-04",
-        "projectPath": "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\CSE210-04.csproj",
-        "packagesPath": "C:\\Users\\Dylan (User)\\.nuget\\packages\\",
-        "outputPath": "D:\\Dylan (User)\\Documents\\School\\CSE210\\CSE210-Projects\\team\\CSE210-04\\obj\\",
+        "projectPath": "C:\\Users\\kriss\\Documents\\BYUI Documents\\Winter_2022\\Programing_with_classes\\Group6_Projects\\Greed\\CSE210-04\\CSE210-04.csproj",
+        "packagesPath": "C:\\Users\\kriss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kriss\\Documents\\BYUI Documents\\Winter_2022\\Programing_with_classes\\Group6_Projects\\Greed\\CSE210-04\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dylan (User)\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kriss\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

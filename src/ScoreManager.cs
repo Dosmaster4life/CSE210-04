@@ -9,7 +9,15 @@ public static class ScoreManager
    score = score + 100; 
    }
    
-     public static void scoreDown(){
+   public static void scoreDown(){
    score = score - 100; 
+   }
+
+   public static void scoreResset(){
+   score = 0; 
+   }
+
+   public static void scoreHalf(){
+   score = score/2; 
    }
 }
