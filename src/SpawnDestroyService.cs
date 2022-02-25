@@ -7,6 +7,7 @@ public class SpawnDestroyService
     public List<Artifact> artifactsList = new();
 
     public void spawnArtifact(char artifact) {
+        Console.WriteLine(artifact);
         switch(artifact) {
             case 'b':
                 Bomb bomb = new();
