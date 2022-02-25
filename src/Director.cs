@@ -38,7 +38,7 @@ public class Director
         UnloadImage(image);
 
         // Load rocket image
-        image = LoadImage("bin/Debug/net6.0/images/rocket.png");
+        image = LoadImage("bin/Debug/net6.0/images/Rocket.png");
         rocketTexture = LoadTextureFromImage(image);
         UnloadImage(image);
     }
@@ -70,6 +70,7 @@ public class Director
                 spawnDestroyService.makeArtifactFall();
                 vd.draw(spawnDestroyService.GetArtifacts());
                 spawnDestroyService.collideCheckAll(player);
+                vd.displayScore();
                 action = false;
             }
 

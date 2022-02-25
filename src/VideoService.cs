@@ -15,7 +15,7 @@ public class VideoService
     public void draw(List<Artifact> objectsToDraw)
     {
         Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.GRAY);
+            Raylib.ClearBackground(Color.BLACK);
 
             for (int i = 0; i < objectsToDraw.Count; i ++) {
                 drawArtifact(objectsToDraw[i].x1, objectsToDraw[i].y1, objectsToDraw[i].radius1, objectsToDraw[i].artifactName);
@@ -33,17 +33,21 @@ public class VideoService
     public void drawArtifact(int x, int y, float radius, char artifactType) // draws an artifact
     {
         if (artifactType == 'b') {
-            Raylib.DrawCircle(x,y,radius,Color.BLUE);
+            Raylib.DrawCircle(x,y,radius,Color.BLACK);
             DrawTexture(Director.bombTexture, x-offset, y-offset, Color.DARKBLUE);
             
         }
         else if (artifactType == 'g') {
-            Raylib.DrawCircle(x,y,radius,Color.GREEN);
+            Raylib.DrawCircle(x,y,radius,Color.BLACK);
             DrawTexture(Director.gemTexture, x-offset, y-offset, Color.DARKGREEN);
         }
         else if (artifactType == 'r') {
-            Raylib.DrawCircle(x,y,radius,Color.RED);
-            DrawTexture(Director.rocketTexture, x-offset, y-offset, Color.DARKPURPLE);
+            Raylib.DrawCircle(x,y,radius,Color.BLACK);
+            DrawTexture(Director.rockTexture, x-offset, y-offset, Color.DARKGRAY);
         }
+    }
+
+    public void displayScore() {
+        DrawText("Score: " + ScoreManager.score.ToString(), 25, 25, 20, WHITE);
     }
 }
