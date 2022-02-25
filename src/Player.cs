@@ -8,22 +8,27 @@ public class Player //This class has all the atributes of the player
  //int y = 5;
  //float radius = 5;
  //int speed = 10;
+ public void setXYCoordinate() {
+        x1 = 400;
+        y1 = 700;
+        
+    }
 
  //Below detect if specific keys are being
 
-        static void Left(string[] args)//this method is to detect if the A key is bineg held down by theh player, if so the palyer's icon should move left. 
+    public void Left(string[] args)//this method is to detect if the A key is bineg held down by theh player, if so the palyer's icon should move left. 
     {
     if (Raylib.IsKeyPressed(KeyboardKey.KEY_A))
         {
-
+         x1 = -10;
         }
     }
 
-    static void Right(string[] args)//this method is to detect if the D key is bineg held down by theh player, if so the palyer's icon should move right. 
+    public void Right(string[] args)//this method is to detect if the D key is bineg held down by theh player, if so the palyer's icon should move right. 
     {
     if (Raylib.IsKeyPressed(KeyboardKey.KEY_D))
         {
-
+         x1 = +10;
         }
     }
 
