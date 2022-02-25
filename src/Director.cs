@@ -69,6 +69,7 @@ public class Director
                 player.Down();
                 spawnDestroyService.makeArtifactFall();
                 vd.draw(spawnDestroyService.GetArtifacts());
+                spawnDestroyService.collideCheckAll(player);
                 action = false;
             }
 

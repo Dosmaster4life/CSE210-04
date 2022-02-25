@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class VideoService
 {
     
-    private int offset = 5;
+    private int offset = 15;
     public void startGame()
     {
        
@@ -15,7 +15,7 @@ public class VideoService
     public void draw(List<Artifact> objectsToDraw)
     {
         Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.BLACK);
+            Raylib.ClearBackground(Color.GRAY);
 
             for (int i = 0; i < objectsToDraw.Count; i ++) {
                 drawArtifact(objectsToDraw[i].x1, objectsToDraw[i].y1, objectsToDraw[i].radius1, objectsToDraw[i].artifactName);
@@ -27,7 +27,7 @@ public class VideoService
     public void drawPlayer(Player player )
     {
         Raylib.DrawCircle(player.x1,player.y1,player.radius,Color.BLACK);
-        DrawTexture(Director.rocketTexture, player.x1, player.y1, GRAY);
+        DrawTexture(Director.rocketTexture, player.x1-offset, player.y1-offset, GRAY);
     }
 
     public void drawArtifact(int x, int y, float radius, char artifactType) // draws an artifact

@@ -59,13 +59,16 @@ public class SpawnDestroyService
             if (artifactsList[i].checkCollision(player.x1, player.y1, player.radius)) {
                 switch(artifactsList[i].artifactName) {
                     case 'b':
-                        ScoreManager.score = 0;
+                        ScoreManager.scoreHalf();
+                        artifactsList.RemoveAt(i);
                         break;
                     case 'g':
                         ScoreManager.scoreUp();
+                        artifactsList.RemoveAt(i);
                         break;
                     case 'r':
                         ScoreManager.scoreDown();
+                        artifactsList.RemoveAt(i);
                         break;
                 }
             }
