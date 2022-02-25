@@ -5,7 +5,7 @@ using static Raylib_cs.Color;
 using System;
 using System.Collections.Generic;
 using System.Timers;
-public class Director
+public class Director   // Starts the game and updates everything per frame
 {
     public static int screenWidth = 800;
     public static int screenHeight = 800;
@@ -20,7 +20,7 @@ public class Director
     public static Texture2D rocketTexture;
 
 
-
+    // Loads all of the image textures
     public static void setImage() {
         // Load bomb image
         Image image = LoadImage("bin/Debug/net6.0/images/bomb.png");
@@ -42,6 +42,8 @@ public class Director
         rocketTexture = LoadTextureFromImage(image);
         UnloadImage(image);
     }
+
+    // Runs the game and updates per frame
     public void startGame()
     {
         var vd = new VideoService();
@@ -50,6 +52,7 @@ public class Director
         setImage();
 
         SetTimer();
+
         Player player = new Player();
 
         while (!Raylib.WindowShouldClose())
@@ -76,6 +79,7 @@ public class Director
 
         }
 
+        // Creates timer to update game per time allotted
         static void SetTimer() {
             timer = new System.Timers.Timer(20);
 

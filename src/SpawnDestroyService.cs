@@ -1,10 +1,11 @@
 ﻿namespace DefaultNamespace;
 
-public class SpawnDestroyService
+public class SpawnDestroyService    // Spawns and destroys artifacts and checks for collisions with the player
 {
     public int artifactMax = 20;
     public List<Artifact> artifactsList = new();
 
+    // Spawn the different artifacts based on what artifact type is entered
     public void spawnArtifact(char artifact) {
         switch(artifact) {
             case 'b':
@@ -31,6 +32,7 @@ public class SpawnDestroyService
         }
     }
 
+    // Checks if there are the maximum amount of artifacts on the screen or not
     public bool checkIfSpawnNeeded() {
         if(artifactMax - (artifactsList.Count - 1) > 0) {
             return true;
@@ -40,10 +42,12 @@ public class SpawnDestroyService
         }
     }
 
+    // Create a list of the artifacts on the screen
     public List<Artifact> GetArtifacts() {
         return artifactsList;
     }
 
+    // Make the artifacts fall and removes them when they fall of the screen
     public void makeArtifactFall() {
         for(int i = 0; i < artifactsList.Count; i++) {
             artifactsList[i].fall();
@@ -54,6 +58,7 @@ public class SpawnDestroyService
         }
     }
 
+    // Check which type of collision happens and remove the item that the player collides with
     public void collideCheckAll(Player player) {
         for(int i = 0; i < artifactsList.Count; i++) {
             if (artifactsList[i].checkCollision(player.x1, player.y1, player.radius)) {
