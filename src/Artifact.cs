@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace;
 
-public abstract class Artifact
+public class Artifact
 {
     Random rnd = new Random();
     public int x1 = 0;
@@ -8,7 +8,7 @@ public abstract class Artifact
     public float radius1 = 10;
     private int fallSpeed = 0;
 
-    public char artifactType = 'b';
+    public char artifactName;
 
     // Set random x coordinate value within frame, set y coordinate value to -10
     public void setXYCoordinate() {
@@ -19,13 +19,13 @@ public abstract class Artifact
     public void setArtifactType(char artifactType) {
         switch (artifactType) {
             case 'b':
-                artifactType = 'b';
+                artifactName = 'b';
                 break;
             case 'g':
-                artifactType = 'g';
+                artifactName = 'g';
                 break;
             case 'r':
-                artifactType = 'r';
+                artifactName = 'r';
                 break;
         }
     }
