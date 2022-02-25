@@ -8,9 +8,10 @@ public class Player //This class has all the atributes of the player
  //int y = 5;
  //float radius = 5;
  //int speed = 10;
+
+    int x1 = 400;
+    int y1 = 700;
  public void setXYCoordinate() {
-        x1 = 400;
-        y1 = 700;
         
     }
 
