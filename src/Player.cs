@@ -39,9 +39,23 @@ public class Player //This class has all the atributes of the player
 
 }
 public void Up() {
+   if(y1>5){
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_W))
+        {
+         y1-=5;
+        }
+}}
 
-}
+
+
+
+
 public void Down() {
+       if(y1<795){
+    if (Raylib.IsKeyDown(KeyboardKey.KEY_S))
+        {
+         y1+=5;
+        }
 
 }
-}
+}}
