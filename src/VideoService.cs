@@ -1,5 +1,7 @@
 ﻿namespace DefaultNamespace;
 using Raylib_cs;
+using static Raylib_cs.Raylib;
+using static Raylib_cs.Color;
 using System;
 using System.Collections.Generic;
 public class VideoService
@@ -25,6 +27,8 @@ public class VideoService
     {
         if (artifactType == 'b') {
             Raylib.DrawCircle(x,y,radius,Color.BLUE);
+            DrawTexture(Director.bombTexture, 100, 100, BLACK);
+            
         }
         else if (artifactType == 'g') {
             Raylib.DrawCircle(x,y,radius,Color.GREEN);

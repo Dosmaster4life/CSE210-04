@@ -3,7 +3,6 @@
 public class SpawnDestroyService
 {
     public int artifactMax = 20;
-    public int screenHeight = 800;
     public List<Artifact> artifactsList = new();
 
     public void spawnArtifact(char artifact) {
@@ -49,7 +48,7 @@ public class SpawnDestroyService
         for(int i = 0; i < artifactsList.Count; i++) {
             artifactsList[i].fall();
 
-            if (artifactsList[i].y1 > screenHeight) {
+            if (artifactsList[i].y1 > Director.screenHeight) {
                 artifactsList.RemoveAt(i);
             }
         }
