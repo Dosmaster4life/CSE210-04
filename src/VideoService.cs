@@ -22,6 +22,10 @@ public class VideoService
             Raylib.EndDrawing();
         
     }
+    public void drawPlayer(Player player )
+{
+Raylib.DrawCircle(player.x1,player.y1,player.radius,Color.BLACK);
+}
 
     public void drawArtifact(int x, int y, float radius, char artifactType) // draws an artifact
     {

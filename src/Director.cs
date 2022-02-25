@@ -30,6 +30,7 @@ public class Director
         setImage();
 
         SetTimer();
+        Player player = new Player();
 
         while (!Raylib.WindowShouldClose())
         {
@@ -41,6 +42,11 @@ public class Director
             }
             
             if (action) {
+                vd.drawPlayer(player);
+                player.Left();
+                player.Right();
+                player.Up();
+                player.Down();
                 spawnDestroyService.makeArtifactFall();
                 vd.draw(spawnDestroyService.GetArtifacts());
                 action = false;
