@@ -27,14 +27,14 @@ public class VideoService
     public void drawPlayer(Player player )
     {
         Raylib.DrawCircle(player.x1,player.y1,player.radius,Color.BLACK);
-        DrawTexture(Director.rocketTexture, player.x1-offset, player.y1-offset, GRAY);
+        DrawTexture(Director.rocketTexture, player.x1-offset, player.y1-offset, WHITE);
     }
 
     public void drawArtifact(int x, int y, float radius, char artifactType) // draws an artifact
     {
         if (artifactType == 'b') {
             Raylib.DrawCircle(x,y,radius,Color.BLACK);
-            DrawTexture(Director.bombTexture, x-offset, y-offset, Color.DARKBLUE);
+            DrawTexture(Director.bombTexture, x-offset, y-offset, Color.BLUE);
             
         }
         else if (artifactType == 'g') {
@@ -43,7 +43,7 @@ public class VideoService
         }
         else if (artifactType == 'r') {
             Raylib.DrawCircle(x,y,radius,Color.BLACK);
-            DrawTexture(Director.rockTexture, x-offset, y-offset, Color.DARKGRAY);
+            DrawTexture(Director.rockTexture, x-offset, y-offset, Color.GRAY);
         }
     }
 
