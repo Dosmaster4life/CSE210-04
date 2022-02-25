@@ -23,12 +23,10 @@ public class VideoService
 
     public void drawArtifact(int x, int y, float radius, char artifactType) // draws an artifact
     {
-        Console.WriteLine(artifactType);
-
         if (artifactType == 'b') {
             Raylib.DrawCircle(x,y,radius,Color.BLUE);
         }
-        if (artifactType == 'g') {
+        else if (artifactType == 'g') {
             Raylib.DrawCircle(x,y,radius,Color.GREEN);
         }
         else if (artifactType == 'r') {
